@@ -1,32 +1,5 @@
-:root {
-  --ff-body: system-ui, sans-serif;
-
-  --fs-base: 1rem;
-  --fs-sm: calc(var(--fs-base) * .875);
-  --fs-lg: calc(var(--fs-base) * 1.25);
-  --fs-h1: calc(var(--fs-base) * 2.5);
-  --fs-h2: calc(var(--fs-base) * 2);
-  --fs-h3: calc(var(--fs-base) * 1.75);
-  --fs-h4: calc(var(--fs-base) * 1.5);
-  --fs-h5: calc(var(--fs-base) * 1.25);
-  --fs-h6: var(--fs-base);
-
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-700: 700;
-  --fw-900: 900;
-
-  --lh-base: 1.5;
-  --lh-sm: 1.25;
-  --lh-lg: 2;
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
-}
-
-* {
   margin: 0;
   padding: 0;
   font: inherit;
