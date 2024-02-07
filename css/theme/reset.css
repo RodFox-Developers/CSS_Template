@@ -6,35 +6,13 @@
 }
 
 html {
-  color-scheme: light;
+  color-scheme: var(--color-scheme);
   hanging-punctuation: first last;
-}
-
-body {
-  font-family: var(--ff-body);
-  font-size: var(--fs-base);
-  font-weight: var(--fw-400);
-  line-height: var(--lh-base);
 }
 
 img, picture, svg, video {
   display: block;
   max-width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
-
-h1 {font-size: var(--fs-h1);}
-h2 {font-size: var(--fs-h2);}
-h3 {font-size: var(--fs-h3);}
-h4 {font-size: var(--fs-h4);}
-h5 {font-size: var(--fs-h5);}
-h6 {font-size: var(--fs-h6);}
-
-p {
-  text-wrap: pretty;
 }
 
 @media (prefers-reduced-motion: no-preference) {

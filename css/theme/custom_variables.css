@@ -1,4 +1,8 @@
 :root {
+  /* COLORS */
+  --color-scheme: light;
+
+  /* FONTS */
   --ff-body: system-ui, sans-serif;
 
   --fs-base: 1rem;
@@ -21,5 +25,6 @@
   --lh-sm: 1.25;
   --lh-lg: 2;
 
+  /* LAYOUT */
   --py-container: 5%;
 }
