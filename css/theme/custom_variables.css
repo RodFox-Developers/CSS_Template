@@ -1,6 +1,29 @@
 :root {
   /* COLORS */
-  --color-scheme: light;
+  --color-scheme: normal;
+
+  --clr-light: #f8f9fa;
+  --clr-dark: #343a40;
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  --clr-gray-100: #f8f9fa;
+  --clr-gray-200: #e9ecef;
+  --clr-gray-300: #dee2e6;
+  --clr-gray-400: #ced4da;
+  --clr-gray-500: #adb5bd;
+  --clr-gray-600: #6c757d;
+  --clr-gray-700: #495057;
+  --clr-gray-800: #343a40;
+  --clr-gray-900: #212529;  
+
+  --clr-primary: #007bff;
+  --clr-secondary: #6c757d;
+  --clr-success: #28a745;
+  --clr-info: #17a2b8;
+  --clr-warning: #ffc107;
+  --clr-danger: #dc3545;
+
 
   /* FONTS */
   --ff-body: system-ui, sans-serif;
@@ -8,6 +31,12 @@
   --fs-base: 1rem;
   --fs-sm: calc(var(--fs-base) * .875);
   --fs-lg: calc(var(--fs-base) * 1.25);
+
+  --fs-display-1: calc(var(--fs-base) * 6);
+  --fs-display-2: calc(var(--fs-base) * 5.5);
+  --fs-display-3: calc(var(--fs-base) * 4.5);
+  --fs-display-4: calc(var(--fs-base) * 3.5);
+
   --fs-h1: calc(var(--fs-base) * 2.5);
   --fs-h2: calc(var(--fs-base) * 2);
   --fs-h3: calc(var(--fs-base) * 1.75);
@@ -26,5 +55,5 @@
   --lh-lg: 2;
 
   /* LAYOUT */
-  --py-container: 5%;
+  --py-flex-container: 5%;
 }

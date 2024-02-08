@@ -1,8 +1,19 @@
 /* CONTAINERS */
 .flex-container {
   width: 100%;
-  padding-left: var(--py-container);
-  padding-right: var(--py-container);
+  padding-left: var(--py-flex-container);
+  padding-right: var(--py-flex-container);
+  margin-right: auto;
+  margin-left: auto;
+
+
+  background-color: aqua;
+}
+
+.flex-container-fluid {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
   margin-right: auto;
   margin-left: auto;
 
