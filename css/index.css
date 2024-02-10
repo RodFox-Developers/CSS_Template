@@ -2,5 +2,6 @@
 @import url("./theme/reset.css");
 @import url("./theme/typography.css");
 @import url("./theme/layout.css");
+@import url("./theme/background.css");
 
 @import url("./utilities/buttons.css");
