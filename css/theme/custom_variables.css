@@ -55,5 +55,6 @@
   --lh-lg: 2;
 
   /* LAYOUT */
-  --py-flex-container: 5%;
+  --py-flex-container: 0px;
+  --mw-flex-container: 1400px;
 }
