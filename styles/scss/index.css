@@ -33,19 +33,19 @@ body {
 }
 
 .display-1 {
-  font-size: calc(var(--fs-base) * 6);
+  font-size: 6rem;
 }
 
 .display-2 {
-  font-size: calc(var(--fs-base) * 5.5);
+  font-size: 5.5rem;
 }
 
 .display-3 {
-  font-size: calc(var(--fs-base) * 4.5);
+  font-size: 4.5rem;
 }
 
 .display-4 {
-  font-size: calc(var(--fs-base) * 3.5);
+  font-size: 3.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,27 +53,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: calc(var(--fs-base) * 2.5);
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: calc(var(--fs-base) * 2);
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: calc(var(--fs-base) * 1.75);
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: calc(var(--fs-base) * 1.5);
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: calc(var(--fs-base) * 1.25);
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: var(--fs-base);
+  font-size: 1rem;
 }
 
 p {
