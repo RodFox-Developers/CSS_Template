@@ -1,20 +1,33 @@
 /* COLORS */
-$color-scheme: normal;
+@mixin theme($color-scheme: unset) {
+  @if $color-scheme == "normal" {
+    color-scheme: normal;
+  } @else if $color-scheme == "light" {
+    color-scheme: light;
+  } @else if $color-scheme == "dark" {
+    color-scheme: dark;
+  } @else if $color-scheme == "light dark" {
+    color-scheme: light dark;
+  }
+}
 
 $clr-light: #f8f9fa;
 $clr-dark: #343a40;
 $clr-white: #fff;
 $clr-black: #000;
 
-$clr-gray-100: #f8f9fa;
-$clr-gray-200: #e9ecef;
-$clr-gray-300: #dee2e6;
-$clr-gray-400: #ced4da;
-$clr-gray-500: #adb5bd;
-$clr-gray-600: #6c757d;
-$clr-gray-700: #495057;
-$clr-gray-800: #343a40;
-$clr-gray-900: #212529;
+// color: map-get($clr-gray, "100");
+$clr-gray: (
+  "100": #f8f9fa,
+  "200": #e9ecef,
+  "300": #dee2e6,
+  "400": #ced4da,
+  "500": #adb5bd,
+  "600": #6c757d,
+  "700": #495057,
+  "800": #343a40,
+  "900": #212529
+);
 
 $clr-primary: #007bff;
 $clr-secondary: #6c757d;
@@ -55,3 +68,7 @@ $lh-lg: 2;
 /* LAYOUT */
 $py-flex-container: 0px;
 $mw-flex-container: 1400px;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;

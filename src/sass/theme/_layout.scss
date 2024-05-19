@@ -224,7 +224,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: $breakpoint-sm) {
   .flex-row {
     .flex-col-sm-1, 
     .flex-col-sm-2, 
@@ -244,7 +244,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-md) {
   .flex-row {
     .flex-col-md-1, 
     .flex-col-md-2, 
@@ -264,7 +264,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: $breakpoint-lg) {
   .flex-row {
     .flex-col-lg-1, 
     .flex-col-lg-2, 

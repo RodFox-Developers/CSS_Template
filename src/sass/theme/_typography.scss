@@ -71,6 +71,6 @@ p {
   text-align: justify;
 }
 
-@media (max-width: 576px) {  
+@media (max-width: $breakpoint-sm) {  
   $fs-base: .875rem;  
 }

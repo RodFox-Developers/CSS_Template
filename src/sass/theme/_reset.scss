@@ -1,5 +1,5 @@
-html {
-  color-scheme: $color-scheme;
+html {  
+  @include theme("normal");
   hanging-punctuation: first last;
 }
 
