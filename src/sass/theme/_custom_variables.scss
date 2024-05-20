@@ -62,3 +62,17 @@ $mw-flex-container: 1400px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
+
+// TRANSITIONS
+@mixin transition-ease ($duration) {
+  transition: all $duration ease-in-out;
+}
+
+//SET TEXT COLOR DEPENDING ON BACKGROUND
+@function set-text-color($bg-color) {
+  @if (lightness($bg-color) > 40%) {
+    @return $clr-black;
+  } @else {
+    @return $clr-white;
+  }
+}

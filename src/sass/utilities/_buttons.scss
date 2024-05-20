@@ -1,3 +1,10 @@
-.zzz {
-  color: map-get($clr-gray, "900");
+.btn-dark {
+  padding: 10px 20px;
+  background-color: $clr-dark;
+  color: set-text-color($clr-dark);
+  @include transition-ease(0.3s);
+  &:hover {
+    background-color: $clr-light;
+    color: set-text-color($clr-light);
+  }
 }
