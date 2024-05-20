@@ -1,0 +1,8 @@
+//SET TEXT COLOR DEPENDING ON BACKGROUND
+@function set-text-color($bg-color) {
+  @if (lightness($bg-color) > 40%) {
+    @return $clr-black;
+  } @else {
+    @return $clr-white;
+  }
+}
