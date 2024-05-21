@@ -1,3 +1,16 @@
+//COLOR SCHEME
+@mixin theme($color-scheme: unset) {
+  @if $color-scheme == "normal" {
+    color-scheme: normal;
+  } @else if $color-scheme == "light" {
+    color-scheme: light;
+  } @else if $color-scheme == "dark" {
+    color-scheme: dark;
+  } @else if $color-scheme == "light dark" {
+    color-scheme: light dark;
+  }
+}
+
 // TRANSITIONS
 @mixin transition-ease ($duration) {
   transition: all $duration ease-in-out;
