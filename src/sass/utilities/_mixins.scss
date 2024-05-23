@@ -15,3 +15,12 @@
 @mixin transition-ease ($duration) {
   transition: all $duration ease-in-out;
 }
+
+//Breakpoints
+@mixin mq($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}

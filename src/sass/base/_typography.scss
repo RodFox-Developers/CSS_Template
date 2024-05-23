@@ -33,31 +33,6 @@ p {
   text-wrap: pretty;
 }
 
-.text-black {
-  color: $clr-black;
-}
-.text-white {
-  color: $clr-white;
-}
-.text-primary {
-  color: $clr-primary;
-}
-.text-secondary {
-  color: $clr-secondary;
-}
-.text-success {
-  color: $clr-success;
-}
-.text-info {
-  color: $clr-info;
-}
-.text-warning {
-  color: $clr-warning;
-}
-.text-danger {
-  color: $clr-danger;
-}
-
 .text-start {
   text-align: start;
 }
@@ -71,6 +46,8 @@ p {
   text-align: justify;
 }
 
-@media (max-width: $breakpoint-sm) {  
-  $fs-base: .875rem;  
+@include mq(small) {
+  body {
+    font-size: 0.875rem;
+  }
 }

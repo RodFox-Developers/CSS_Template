@@ -2,8 +2,8 @@
 @import './utilities/functions';
 @import './utilities/mixins';
 @import './utilities/placeholders';
-@import './utilities/breakpoints';
 @import './utilities/colors';
+@import './utilities/global';
 
 @import './vendors/bootstrap';
 
@@ -11,7 +11,6 @@
 @import './base/typography';
 @import './base/animations';
 
-@import './layout/global';
 @import './layout/navigation';
 @import './layout/grid';
 @import './layout/header';

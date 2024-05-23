@@ -1,4 +1,6 @@
-/* CONTAINERS */
+@use 'sass:math';
+
+//CONTAINERS
 .flex-container {
   max-width: $mw-flex-container;
   max-height: 100%;
@@ -17,7 +19,7 @@
   margin-left: auto;
 }
 
-/* ROWS AND COLUMNS */
+//ROWS AND COLUMNS
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -27,8 +29,8 @@
   .flex-col-lg-1, 
   .flex-col-md-1, 
   .flex-col-sm-1 {
-    flex: 0 0 (100%/12)*1;
-    max-width: (100%/12)*1;
+    flex: 0 0 math.div(100%, 12)*1;
+    max-width: math.div(100%, 12)*1;
     position: relative;
     width: 100%;
   }
@@ -37,8 +39,8 @@
   .flex-col-lg-2, 
   .flex-col-md-2, 
   .flex-col-sm-2 {
-    flex: 0 0 (100%/12)*2;
-    max-width: (100%/12)*2;
+    flex: 0 0 math.div(100%, 12)*2;
+    max-width: math.div(100%, 12)*2;
     position: relative;
     width: 100%;
   }
@@ -47,27 +49,27 @@
   .flex-col-lg-3, 
   .flex-col-md-3, 
   .flex-col-sm-3 {
-    flex: 0 0 (100%/12)*3;
-    max-width: (100%/12)*3;
+    flex: 0 0 math.div(100%, 12)*3;
+    max-width: math.div(100%, 12)*3;
     position: relative;
     width: 100%;
   }
   
   .flex-col-4, .flex-col-lg-4, .flex-col-md-4, .flex-col-sm-4 {
-    flex: 0 0 (100%/12)*4;
-    max-width: (100%/12)*4;
+    flex: 0 0 math.div(100%, 12)*4;
+    max-width: math.div(100%, 12)*4;
     position: relative;
     width: 100%;
   }
   .flex-col-5, .flex-col-lg-5, .flex-col-md-5, .flex-col-sm-5 {
-    flex: 0 0 (100%/12)*5;
-    max-width: (100%/12)*5;
+    flex: 0 0 math.div(100%, 12)*5;
+    max-width: math.div(100%, 12)*5;
     position: relative;
     width: 100%;
   }
   .flex-col-6, .flex-col-lg-6, .flex-col-md-6, .flex-col-sm-6 {
-    flex: 0 0 (100%/12)*6;
-    max-width: (100%/12)*6;
+    flex: 0 0 math.div(100%, 12)*6;
+    max-width: math.div(100%, 12)*6;
     position: relative;
     width: 100%;
   }
@@ -76,8 +78,8 @@
   .flex-col-lg-7, 
   .flex-col-md-7, 
   .flex-col-sm-7 {
-    flex: 0 0 (100%/12)*7;
-    max-width: (100%/12)*7;
+    flex: 0 0 math.div(100%, 12)*7;
+    max-width: math.div(100%, 12)*7;
     position: relative;
     width: 100%;
   }
@@ -86,8 +88,8 @@
   .flex-col-lg-8, 
   .flex-col-md-8, 
   .flex-col-sm-8 {
-    flex: 0 0 (100%/12)*8;
-    max-width: (100%/12)*8;
+    flex: 0 0 math.div(100%, 12)*8;
+    max-width: math.div(100%, 12)*8;
     position: relative;
     width: 100%;
   }
@@ -96,8 +98,8 @@
   .flex-col-lg-9, 
   .flex-col-md-9, 
   .flex-col-sm-9 {
-    flex: 0 0 (100%/12)*9;
-    max-width: (100%/12)*9;
+    flex: 0 0 math.div(100%, 12)*9;
+    max-width: math.div(100%, 12)*9;
     position: relative;
     width: 100%;
   }
@@ -106,8 +108,8 @@
   .flex-col-lg-10, 
   .flex-col-md-10, 
   .flex-col-sm-10 {
-    flex: 0 0 (100%/12)*10;
-    max-width: (100%/12)*10;
+    flex: 0 0 math.div(100%, 12)*10;
+    max-width: math.div(100%, 12)*10;
     position: relative;
     width: 100%;
   }
@@ -116,8 +118,8 @@
   .flex-col-lg-11, 
   .flex-col-md-11, 
   .flex-col-sm-11 {
-    flex: 0 0 (100%/12)*11;
-    max-width: (100%/12)*11;
+    flex: 0 0 math.div(100%, 12)*11;
+    max-width: math.div(100%, 12)*11;
     position: relative;
     width: 100%;
   }
@@ -126,14 +128,14 @@
   .flex-col-lg-12, 
   .flex-col-md-12, 
   .flex-col-sm-12 {
-    flex: 0 0 (100%/12)*12;
-    max-width: (100%/12)*12;
+    flex: 0 0 math.div(100%, 12)*12;
+    max-width: math.div(100%, 12)*12;
     position: relative;
     width: 100%;
   }
 }
 
-@media (max-width: $breakpoint-sm) {
+@include mq(small) {
   .flex-row {
     .flex-col-sm-1, 
     .flex-col-sm-2, 
@@ -153,7 +155,7 @@
   }
 }
 
-@media (max-width: $breakpoint-md) {
+@include mq(medium) {
   .flex-row {
     .flex-col-md-1, 
     .flex-col-md-2, 
@@ -173,7 +175,7 @@
   }
 }
 
-@media (max-width: $breakpoint-lg) {
+@include mq(large) {
   .flex-row {
     .flex-col-lg-1, 
     .flex-col-lg-2, 

@@ -1,10 +1,10 @@
 .btn-dark {
   padding: 10px 20px;
-  background-color: $clr-dark;
-  color: set-text-color($clr-dark);
+  background-color: map-get($clr, dark);
+  color: set-text-color(map-get($clr, dark));
   @include transition-ease(0.3s);
   &:hover {
-    background-color: $clr-light;
-    color: set-text-color($clr-light);
+    background-color: map-get($clr, light);
+    color: set-text-color(map-get($clr, light));
   }
 }
