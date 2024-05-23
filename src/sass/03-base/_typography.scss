@@ -5,8 +5,12 @@ body {
   line-height: $lh-base;
 }
 
-@each $key, $val in $fs {
-  .fs-#{$key} {font-size: $val};  
+@each $key, $val in $fs-display {
+  .#{$key} {font-size: $val};  
+}
+
+@each $key, $val in $fs-headings {
+  #{$key} {font-size: $val};  
 }
 
 @include mq(small) {
