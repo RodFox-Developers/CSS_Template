@@ -1,15 +1,27 @@
 //COLORS
 $clr: (
+  light: #f8f9fa,
+  dark: #343a40,
+  white: #fff,
+  black: #000
+);
+
+$clr-light-theme: (
   primary: #007bff,
   secondary: #6c757d,
   success: #28a745,
   info: #17a2b8,
   warning: #ffc107,
-  danger: #dc3545,
-  light: #f8f9fa,
-  dark: #343a40,
-  white: #fff,
-  black: #000
+  danger: #dc3545
+);
+
+$clr-dark-theme: (
+  primary: #80bdff,
+  secondary: #bbc0c4,
+  success: #28a745,
+  info: #17a2b8,
+  warning: #ffc107,
+  danger: #dc3545
 );
 
 $clr-gray: (
@@ -68,3 +80,17 @@ $breakpoints: (
   medium: 768px,
   large: 992px
 );
+
+:root {
+
+  @each $key, $val in $clr-light-theme {
+    --clr-#{$key}: #{$val};    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @each $key, $val in $clr-dark-theme {
+      --clr-#{$key}: #{$val};    
+    }
+  }
+
+}
