@@ -26,28 +26,32 @@ $clr-gray: (
 
 //FONTS
 $ff-body: system-ui, sans-serif;
-
 $fs-base: 1rem;
-$fs-sm: $fs-base * 0.875;
-$fs-lg: $fs-base * 1.25;
+$fs: (
+  base: $fs-base, 
+  sm: $fs-base * 0.875, 
+  lg: $fs-base * 1.25, 
+  
+  display-1: $fs-base * 6, 
+  display-2: $fs-base * 5.5, 
+  display-3: $fs-base * 4.5, 
+  display-4: $fs-base * 3.5, 
+  
+  h1: $fs-base * 2.5, 
+  h2: $fs-base * 2, 
+  h3: $fs-base * 1.75, 
+  h4: $fs-base * 1.5, 
+  h5: $fs-base * 1.25, 
+  h6: $fs-base
+);
 
-$fs-display-1: $fs-base * 6;
-$fs-display-2: $fs-base * 5.5;
-$fs-display-3: $fs-base * 4.5;
-$fs-display-4: $fs-base * 3.5;
-
-$fs-h1: $fs-base * 2.5;
-$fs-h2: $fs-base * 2;
-$fs-h3: $fs-base * 1.75;
-$fs-h4: $fs-base * 1.5;
-$fs-h5: $fs-base * 1.25;
-$fs-h6: $fs-base;
-
-$fw-300: 300;
-$fw-400: 400;
-$fw-500: 500;
-$fw-700: 700;
-$fw-900: 900;
+$fw: (
+  '300': 300, 
+  '400': 400, 
+  '500': 500, 
+  '700': 700, 
+  '900': 900
+);
 
 $lh-base: 1.5;
 $lh-sm: 1.25;

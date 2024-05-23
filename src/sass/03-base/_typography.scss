@@ -1,0 +1,16 @@
+body {
+  font-family: $ff-body;
+  font-size: $fs-base;
+  font-weight: map-get($fw, '400');
+  line-height: $lh-base;
+}
+
+@each $key, $val in $fs {
+  .fs-#{$key} {font-size: $val};  
+}
+
+@include mq(small) {
+  body {
+    font-size: 0.875rem;
+  }
+}

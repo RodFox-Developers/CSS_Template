@@ -1,31 +1,31 @@
-@import './utilities/variables';
-@import './utilities/functions';
-@import './utilities/mixins';
-@import './utilities/placeholders';
-@import './utilities/colors';
-@import './utilities/global';
+@import './01-utilities/variables';
+@import './01-utilities/functions';
+@import './01-utilities/mixins';
+@import './01-utilities/placeholders';
+@import './01-utilities/colors';
+@import './01-utilities/global';
 
-@import './vendors/bootstrap';
+@import './02-vendors/bootstrap';
 
-@import './base/reset';
-@import './base/typography';
-@import './base/animations';
+@import './03-base/reset';
+@import './03-base/typography';
+@import './03-base/animations';
 
-@import './layout/navigation';
-@import './layout/grid';
-@import './layout/header';
-@import './layout/footer';
-@import './layout/sidebar';
-@import './layout/forms';
+@import './04-layout/navigation';
+@import './04-layout/grid';
+@import './04-layout/header';
+@import './04-layout/footer';
+@import './04-layout/sidebar';
+@import './04-layout/forms';
 
-@import './components/buttons';
-@import './components/carousel';
-@import './components/cover';
-@import './components/dropdown';
-@import './components/media';
-@import './components/thumbnails';
+@import './05-components/buttons';
+@import './05-components/carousel';
+@import './05-components/cover';
+@import './05-components/dropdown';
+@import './05-components/media';
+@import './05-components/thumbnails';
 
-@import './pages/home';
+@import './06-pages/home';
 
-@import './themes/theme';
-@import './themes/admin';
+@import './07-themes/theme';
+@import './07-themes/admin';
