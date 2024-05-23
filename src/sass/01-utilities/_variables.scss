@@ -26,17 +26,19 @@ $clr-gray: (
 
 //FONTS
 $ff-body: system-ui, sans-serif;
+
 $fs-base: 1rem;
-$fs: (
-  base: $fs-base, 
-  sm: $fs-base * 0.875, 
-  lg: $fs-base * 1.25, 
-  
+$fs-sm: $fs-base * 0.875; 
+$fs-lg: $fs-base * 1.25; 
+
+$fs-display: (  
   display-1: $fs-base * 6, 
   display-2: $fs-base * 5.5, 
   display-3: $fs-base * 4.5, 
-  display-4: $fs-base * 3.5, 
-  
+  display-4: $fs-base * 3.5
+);
+
+$fs-headings: (
   h1: $fs-base * 2.5, 
   h2: $fs-base * 2, 
   h3: $fs-base * 1.75, 
