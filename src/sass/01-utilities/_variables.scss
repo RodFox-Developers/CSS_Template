@@ -16,8 +16,8 @@ $clr-light-theme: (
 );
 
 $clr-dark-theme: (
-  primary: #80bdff,
-  secondary: #bbc0c4,
+  primary: #00254d,
+  secondary: #3b4044,
   success: #28a745,
   info: #17a2b8,
   warning: #ffc107,
@@ -98,6 +98,14 @@ $lh-lg: 2;
 //LAYOUT
 $py-flex-container: 0px;
 $mw-flex-container: 1400px;
+
+$margin-padding: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem
+);
 
 $breakpoints: (
   small: 576px,

@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 //COLOR SCHEME
 @mixin theme($color-scheme: unset) {
   @if $color-scheme == "normal" {
