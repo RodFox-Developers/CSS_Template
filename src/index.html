@@ -649,5 +649,33 @@
       </div>     
 
     </div>
+
+    <script>      
+      let colorScheme = localStorage.getItem('colorScheme');
+      const colorSchemeToggleBtn = document.querySelector('#color_scheme_toggle');
+
+      const disableDarkMode = () => {
+        document.body.classList.remove('darkMode');
+        localStorage.setItem('colorScheme', null);
+      };
+
+      const enableDarkMode = () => {
+        document.body.classList.add('darkMode');
+        localStorage.setItem('colorScheme', 'darkMode');
+      };
+
+      if(colorScheme == 'darkMode') {
+        enableDarkMode();
+      }
+
+      colorSchemeToggleBtn.addEventListener('click', () =>{
+        colorScheme = localStorage.getItem('colorScheme');
+        if(colorScheme !== 'darkMode') {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
+      })
+    </script>
   </body>
 </html>
