@@ -1,15 +1,51 @@
 //COLORS
 $clr: (
+  light: #f8f9fa,
+  dark: #343a40,
+  white: #fff,
+  black: #000
+);
+
+$clr-light-theme: (
   primary: #007bff,
   secondary: #6c757d,
   success: #28a745,
   info: #17a2b8,
   warning: #ffc107,
-  danger: #dc3545,
-  light: #f8f9fa,
-  dark: #343a40,
-  white: #fff,
-  black: #000
+  danger: #dc3545
+);
+
+$clr-dark-theme: (
+  primary: #00254d,
+  secondary: #3b4044,
+  success: #28a745,
+  info: #17a2b8,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$clr-primary-shades: (
+  "100": #e5f2ff,
+  "200": #b3d7ff,
+  "300": #80bdff,
+  "400": #4da3ff,
+  "500": #1a88ff,
+  "600": #006fe6,
+  "700": #0056b3,
+  "800": #003d80,
+  "900": #00254d
+);
+
+$clr-secondary-shades: (
+  "100": #f1f2f3,
+  "200": #d6d9dc,
+  "300": #bbc0c4,
+  "400": #9fa6ac,
+  "500": #848d95,
+  "600": #6a737b,
+  "700": #535a60,
+  "800": #3b4044,
+  "900": #232629
 );
 
 $clr-gray: (
@@ -63,8 +99,30 @@ $lh-lg: 2;
 $py-flex-container: 0px;
 $mw-flex-container: 1400px;
 
+$margin-padding: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem
+);
+
 $breakpoints: (
   small: 576px,
   medium: 768px,
   large: 992px
 );
+
+:root {
+
+  @each $key, $val in $clr-light-theme {
+    --clr-#{$key}: #{$val};    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @each $key, $val in $clr-dark-theme {
+      --clr-#{$key}: #{$val};    
+    }
+  }
+
+}
