@@ -114,12 +114,35 @@ $breakpoints: (
 );
 
 :root {
+  --theme-color: black;
+  --theme-background-color: white;
 
   @each $key, $val in $clr-light-theme {
     --clr-#{$key}: #{$val};    
   }
 
   @media (prefers-color-scheme: dark) {
+    --theme-color: white;
+    --theme-background-color: #121212;
+    @each $key, $val in $clr-dark-theme {
+      --clr-#{$key}: #{$val};    
+    }
+  }
+
+  :has(#theme [value="light"]:checked) {
+    color-scheme: light;
+    --theme-color: black;
+    --theme-background-color: white;
+  
+    @each $key, $val in $clr-light-theme {
+      --clr-#{$key}: #{$val};    
+    }
+  }
+  
+  :has(#theme [value="dark"]:checked) {
+    color-scheme: dark;
+    --theme-color: white;
+    --theme-background-color: #121212;
     @each $key, $val in $clr-dark-theme {
       --clr-#{$key}: #{$val};    
     }

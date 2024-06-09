@@ -1,9 +1,16 @@
+@use '../01-utilities/variables' as *;
 @use '../01-utilities/mixins' as *;
 
+//Color Scheme
 html {  
   @include theme("light dark");
 }
 
-//Colors
+body {
+  color: var(--theme-color);
+  background-color: var(--theme-background-color);
+}
+
+
 //Borders
 //Shadows
