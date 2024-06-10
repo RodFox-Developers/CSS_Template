@@ -28,6 +28,11 @@
       </div>
       <div class="flex-row">
         <div class="flex-col-12 mt-5">
+          <button id="color_scheme_toggle" class="btn-light">Toggle color scheme</button>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-col-12 mt-5">
           <h2 class="fw-700">Utility Classes</h2>
         </div>
       </div>
@@ -656,11 +661,13 @@
 
       const disableDarkMode = () => {
         document.body.classList.remove('darkMode');
+        colorSchemeToggleBtn.classList.remove('btn-dark');
         localStorage.setItem('colorScheme', null);
       };
 
       const enableDarkMode = () => {
         document.body.classList.add('darkMode');
+        colorSchemeToggleBtn.classList.add('btn-dark');
         localStorage.setItem('colorScheme', 'darkMode');
       };
 
