@@ -727,5 +727,37 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const themeSwitcher = document.querySelector("[data-theme-picker]");
+      let colorScheme = localStorage.getItem("colorScheme");
+
+      if (colorScheme == "systemMode") {
+        document.documentElement.removeAttribute("data-theme");        
+        themeSwitcher.value = "system";
+      } else if (colorScheme == "lightMode") {
+        document.documentElement.setAttribute("data-theme", "light");        
+        themeSwitcher.value = "light";
+      } else if (colorScheme == "darkMode") {
+        document.documentElement.setAttribute("data-theme", "dark");        
+        themeSwitcher.value = "dark";
+      }
+
+      themeSwitcher.addEventListener("change", () => {
+        if (themeSwitcher.value === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+          localStorage.setItem("colorScheme", "lightMode");
+          themeSwitcher.value = "light";
+        } else if (themeSwitcher.value === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+          localStorage.setItem("colorScheme", "darkMode");
+          themeSwitcher.value = "dark";
+        } else if (themeSwitcher.value === "system") {
+          document.documentElement.removeAttribute("data-theme");
+          localStorage.setItem("colorScheme", "systemMode");
+          themeSwitcher.value = "system";
+        }
+      });
+    </script>
   </body>
 </html>
