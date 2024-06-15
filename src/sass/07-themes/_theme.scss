@@ -1,9 +1,15 @@
+@use '../01-utilities/variables' as *;
 @use '../01-utilities/mixins' as *;
 
+//Colors
 html {  
-  @include theme("light dark");
+  @include theme("unset");
 }
 
-//Colors
+.darkMode {
+  color: map-get($clr, white);
+  background-color: $darkMode-background-color;
+}
+
 //Borders
 //Shadows

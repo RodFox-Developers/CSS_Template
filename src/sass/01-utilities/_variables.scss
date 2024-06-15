@@ -60,6 +60,8 @@ $clr-gray: (
   "900": #212529
 );
 
+$darkMode-background-color: #121212;
+
 //FONTS
 $ff-body: system-ui, sans-serif;
 
@@ -114,15 +116,13 @@ $breakpoints: (
 );
 
 :root {
-
   @each $key, $val in $clr-light-theme {
     --clr-#{$key}: #{$val};    
   }
 
-  @media (prefers-color-scheme: dark) {
+  &:has(.darkMode) {
     @each $key, $val in $clr-dark-theme {
       --clr-#{$key}: #{$val};    
     }
-  }
-
+}
 }
