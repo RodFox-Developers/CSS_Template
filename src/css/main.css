@@ -1,0 +1,29 @@
+@import url('./01-utilities/variables.css');
+@import url('./01-utilities/placeholders.css');
+@import url('./01-utilities/colors.css');
+@import url('./01-utilities/global.css');
+
+@import url('./02-vendors/bootstrap.css');
+
+@import url('./03-base/reset.css');
+@import url('./03-base/typography.css');
+@import url('./03-base/animations.css');
+
+@import url('./04-layout/navigation.css');
+@import url('./04-layout/grid.css');
+@import url('./04-layout/header.css');
+@import url('./04-layout/footer.css');
+@import url('./04-layout/sidebar.css');
+@import url('./04-layout/forms.css');
+
+@import url('./05-components/buttons.css');
+@import url('./05-components/carousel.css');
+@import url('./05-components/cover.css');
+@import url('./05-components/dropdown.css');
+@import url('./05-components/media.css');
+@import url('./05-components/thumbnails.css');
+
+@import url('./06-pages/home.css');
+
+@import url('./07-themes/theme.css');
+@import url('./07-themes/admin.css');
