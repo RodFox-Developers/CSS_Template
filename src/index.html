@@ -5,58 +5,684 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 5px;
+        text-align: left;
+      }
+    </style>
   </head>
   <body>
-    <h1>hola</h1>
-    <p>skdjfhksdf sdkljfnskld asdljfknlasdk asldkfnalsk</p>
-
-    <div class="flex-container">
+    <div class="flex-container py-5">
       <div class="flex-row">
-        <div class="flex-col-sm-12 text-center">
-          <p class="display-1">Hola</p>
-          <p class="display-2">Hola</p>
-          <p class="display-3">Hola</p>
-          <p class="display-4">Hola</p>
-          <hr />
-          <h1>Hola</h1>
-          <h2>Hola</h2>
-          <h3>Hola</h3>
-          <h4>Hola</h4>
-          <h5>Hola</h5>
-          <h6>Hola</h6>
+        <div class="flex-col-12 my-5">
+          <h1 class="fw-900">Scalable CSS/SASS Architecture Template</h1>
         </div>
       </div>
-      <div class="flex-row justify-content-space-evenly">
-        <div class="flex-col-lg-4">
-          <p class="">
-            1 of 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-            at temporibus magni dicta quis, deserunt atque beatae nostrum nam
-            reiciendis ut distinctio voluptas culpa aliquam rem iure ipsam eaque
-            harum! Reprehenderit corrupti, a ratione rem accusantium doloribus
-            iusto enim? Facilis incidunt harum asperiores autem illo
-            reprehenderit mollitia vero quod, ducimus magni sed aliquam
-            voluptate quo quidem necessitatibus tempora suscipit rem eveniet
-            ratione dolor minima iusto quibusdam delectus animi. Alias laborum
-            dolor accusamus voluptates magni, ad suscipit aperiam quo quas,
-            tempora totam cupiditate ut debitis beatae tenetur aspernatur eius
-            est, quae ipsum repellat. Saepe sint dicta at soluta temporibus
-            quibusdam dignissimos earum optio natus, quos, eveniet officiis
-            iste? Beatae sit cum animi nostrum quis laborum velit ratione ut
-            voluptatum ipsum. Quisquam odit voluptates veritatis deleniti,
-            minima maxime rem? Repellendus suscipit quam nemo? Ea odio corporis
-            mollitia, quisquam sint eaque eos aperiam deleniti tempore
-            distinctio, exercitationem facere. Blanditiis incidunt quibusdam
-            recusandae perspiciatis,
-          </p>
+      <div class="flex-row">
+        <div class="flex-col-12 mt-5">
+          <button id="color_scheme_toggle" class="btn-light">Toggle color scheme</button>
         </div>
-        <div class="flex-col-lg-4">2 of 2</div>
       </div>
+      <div class="flex-row">
+        <div class="flex-col-12 mt-5">
+          <h2 class="fw-700">Utility Classes</h2>
+        </div>
+      </div>
+
       <div class="flex-row mb-5">
-        <div class="flex-col-sm-10">
-          <button class="btn-dark">Button</button>
+        <div class="flex-col-12 mt-5">
+          <h3 class="fw-700">Background Colors:</h3>
         </div>
-        <div class="flex-col-sm-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia consequuntur non eveniet voluptatem quasi ad deleniti, deserunt voluptate dolorum vel est maxime aliquid similique aut iure magnam necessitatibus rerum doloremque.</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-primary">.bg-primary</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-secondary">.bg-secondary</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-success">.bg-success</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-info">.bg-info</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-warning">.bg-warning</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-danger">.bg-danger</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-light">.bg-light</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-dark">.bg-dark</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-white">.bg-white</div>
+        <div class="flex-col-lg-12 my-1 p-3 bg-black">.bg-black</div>
       </div>
+
+      <div class="flex-row mb-5">
+        <div class="flex-col-12 mt-5">
+          <h3 class="fw-700">Text Colors:</h3>
+        </div>
+        <div class="flex-col-lg-12 my-1 p-3 text-primary">.text-primary</div>
+        <div class="flex-col-lg-12 my-1 p-3 text-secondary">
+          .text-secondary
+        </div>
+        <div class="flex-col-lg-12 my-1 p-3 text-success">.text-success</div>
+        <div class="flex-col-lg-12 my-1 p-3 text-info">.text-info</div>
+        <div class="flex-col-lg-12 my-1 p-3 text-warning">.text-warning</div>
+        <div class="flex-col-lg-12 my-1 p-3 text-danger">.text-danger</div>
+        <div class="flex-col-lg-12 my-1 p-3 text-light bg-black">
+          .text-light
+        </div>
+        <div class="flex-col-lg-12 my-1 p-3 text-dark">.text-dark</div>
+        <div class="flex-col-lg-12 my-1 p-3 text-white bg-black">
+          .text-white
+        </div>
+        <div class="flex-col-lg-12 my-1 p-3 text-black">.text-black</div>
+      </div>
+
+      <div class="flex-row mb-5">
+        <div class="flex-col-12 mt-5">
+          <h3 class="fw-700">Margins & Paddings:</h3>
+        </div>
+        <div class="flex-col-lg-12 my-1 p-3">
+          <table style="width: 100%">
+            <tr>
+              <th class="fw-700">Margin</th>
+              <th class="fw-700">Padding</th>
+              <th class="fw-700">Value</th>
+            </tr>
+            <tr>
+              <td>
+                <p>.m-1</p>
+                <p>.mx-1</p>
+                <p>.my-1</p>
+                <p>.mt-1</p>
+                <p>.mb-1</p>
+                <p>.ml-1</p>
+                <p>.mr-1</p>
+              </td>
+              <td>
+                <p>.p-1</p>
+                <p>.px-1</p>
+                <p>.py-1</p>
+                <p>.pt-1</p>
+                <p>.pb-1</p>
+                <p>.pl-1</p>
+                <p>.pr-1</p>
+              </td>
+              <td>0.25rem</td>
+            </tr>
+            <tr>
+              <td>
+                <p>.m-2</p>
+                <p>.mx-2</p>
+                <p>.my-2</p>
+                <p>.mt-2</p>
+                <p>.mb-2</p>
+                <p>.ml-2</p>
+                <p>.mr-2</p>
+              </td>
+              <td>
+                <p>.p-2</p>
+                <p>.px-2</p>
+                <p>.py-2</p>
+                <p>.pt-2</p>
+                <p>.pb-2</p>
+                <p>.pl-2</p>
+                <p>.pr-2</p>
+              </td>
+              <td>0.5rem</td>
+            </tr>
+            <tr>
+              <td>
+                <p>.m-3</p>
+                <p>.mx-3</p>
+                <p>.my-3</p>
+                <p>.mt-3</p>
+                <p>.mb-3</p>
+                <p>.ml-3</p>
+                <p>.mr-3</p>
+              </td>
+              <td>
+                <p>.p-3</p>
+                <p>.px-3</p>
+                <p>.py-3</p>
+                <p>.pt-3</p>
+                <p>.pb-3</p>
+                <p>.pl-3</p>
+                <p>.pr-3</p>
+              </td>
+              <td>1rem</td>
+            </tr>
+            <tr>
+              <td>
+                <p>.m-4</p>
+                <p>.mx-4</p>
+                <p>.my-4</p>
+                <p>.mt-4</p>
+                <p>.mb-4</p>
+                <p>.ml-4</p>
+                <p>.mr-4</p>
+              </td>
+              <td>
+                <p>.p-4</p>
+                <p>.px-4</p>
+                <p>.py-4</p>
+                <p>.pt-4</p>
+                <p>.pb-4</p>
+                <p>.pl-4</p>
+                <p>.pr-4</p>
+              </td>
+              <td>1.5rem</td>
+            </tr>
+            <tr>
+              <td>
+                <p>.m-5</p>
+                <p>.mx-5</p>
+                <p>.my-5</p>
+                <p>.mt-5</p>
+                <p>.mb-5</p>
+                <p>.ml-5</p>
+                <p>.mr-5</p>
+              </td>
+              <td>
+                <p>.p-5</p>
+                <p>.px-5</p>
+                <p>.py-5</p>
+                <p>.pt-5</p>
+                <p>.pb-5</p>
+                <p>.pl-5</p>
+                <p>.pr-5</p>
+              </td>
+              <td>3rem</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="flex-row mb-5">
+        <div class="flex-col-12">
+          <h3 class="fw-700">Fonts:</h3>
+          <h5 class="mt-5">Font Size:</h5>
+        </div>
+        <div class="flex-col-lg-12 my-1 p-3 display-1">.display-1</div>
+        <div class="flex-col-lg-12 my-1 p-3 display-2">.display-2</div>
+        <div class="flex-col-lg-12 my-1 p-3 display-3">.display-3</div>
+        <div class="flex-col-lg-12 my-1 p-3 display-4">.display-4</div>
+      </div>
+
+      <div class="flex-row mb-5">
+        <div class="flex-col-12">
+          <h5 class="mt-5">Font Weight:</h5>
+        </div>
+        <div class="flex-col-lg-12 my-1 p-3 fw-300">.fw-300</div>
+        <div class="flex-col-lg-12 my-1 p-3 fw-400">.fw-400</div>
+        <div class="flex-col-lg-12 my-1 p-3 fw-500">.fw-500</div>
+        <div class="flex-col-lg-12 my-1 p-3 fw-700">.fw-700</div>
+        <div class="flex-col-lg-12 my-1 p-3 fw-900">.fw-900</div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-col-12 mt-5">
+          <h3 class="fw-700">Grid System:</h3>
+        </div>
+      </div>
+      <ul class="my-3 pl-4">
+        <li>.flex-col-1</li>
+        <li>.flex-col-2</li>
+        <li>.flex-col-3</li>
+        <li>.flex-col-4</li>
+        <li>.flex-col-5</li>
+        <li>.flex-col-6</li>
+        <li>.flex-col-7</li>
+        <li>.flex-col-8</li>
+        <li>.flex-col-9</li>
+        <li>.flex-col-10</li>
+        <li>.flex-col-11</li>
+        <li>.flex-col-12</li>
+      </ul>
+      <div class="flex-row my-1 bg-light">
+        <div
+          class="flex-col-12 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-12
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light">
+        <div
+          class="flex-col-6 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-6
+        </div>
+        <div
+          class="flex-col-6 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-6
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light">
+        <div
+          class="flex-col-4 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-4
+        </div>
+        <div
+          class="flex-col-4 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-4
+        </div>
+        <div
+          class="flex-col-4 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-4
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light">
+        <div
+          class="flex-col-3 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-3
+        </div>
+        <div
+          class="flex-col-3 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-3
+        </div>
+        <div
+          class="flex-col-3 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-3
+        </div>
+        <div
+          class="flex-col-3 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-3
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light">
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+        <div
+          class="flex-col-1 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-1
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light">
+        <div
+          class="flex-col-4 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-4
+        </div>
+        <div
+          class="flex-col-8 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-8
+        </div>
+      </div>
+      <h5 class="mt-5">With Breakpoints (sm-md-lg):</h5>
+      <table style="width: 100%">
+        <tr>
+          <th class="fw-700">small</th>
+          <th class="fw-700">medium</th>
+          <th class="fw-700">large</th>
+        </tr>
+        <tr>
+          <td>
+            <ul class="my-3 pl-4">
+              <li>.flex-col-sm-1</li>
+              <li>.flex-col-sm-2</li>
+              <li>.flex-col-sm-3</li>
+              <li>.flex-col-sm-4</li>
+              <li>.flex-col-sm-5</li>
+              <li>.flex-col-sm-6</li>
+              <li>.flex-col-sm-7</li>
+              <li>.flex-col-sm-8</li>
+              <li>.flex-col-sm-9</li>
+              <li>.flex-col-sm-10</li>
+              <li>.flex-col-sm-11</li>
+              <li>.flex-col-sm-12</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="my-3 pl-4">
+              <li>.flex-col-md-1</li>
+              <li>.flex-col-md-2</li>
+              <li>.flex-col-md-3</li>
+              <li>.flex-col-md-4</li>
+              <li>.flex-col-md-5</li>
+              <li>.flex-col-md-6</li>
+              <li>.flex-col-md-7</li>
+              <li>.flex-col-md-8</li>
+              <li>.flex-col-md-9</li>
+              <li>.flex-col-md-10</li>
+              <li>.flex-col-md-11</li>
+              <li>.flex-col-md-12</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="my-3 pl-4">
+              <li>.flex-col-lg-1</li>
+              <li>.flex-col-lg-2</li>
+              <li>.flex-col-lg-3</li>
+              <li>.flex-col-lg-4</li>
+              <li>.flex-col-lg-5</li>
+              <li>.flex-col-lg-6</li>
+              <li>.flex-col-lg-7</li>
+              <li>.flex-col-lg-8</li>
+              <li>.flex-col-lg-9</li>
+              <li>.flex-col-lg-10</li>
+              <li>.flex-col-lg-11</li>
+              <li>.flex-col-lg-12</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <h5 class="mt-5">Content Alignment:</h5>
+      <p>.justify-content-start</p>
+      <div class="flex-row my-1 bg-light justify-content-start" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+      </div>
+      <p>.justify-content-end</p>
+      <div class="flex-row my-1 bg-light justify-content-end" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+      </div>
+      <p>.justify-content-center</p>
+      <div class="flex-row my-1 bg-light justify-content-center" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+      </div>
+      <p>.justify-content-space-around</p>
+      <div class="flex-row my-1 bg-light justify-content-space-around" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+      </div>
+      <p>.justify-content-space-between</p>
+      <div class="flex-row my-1 bg-light justify-content-space-between" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+      </div>
+      <p>.justify-content-space-evenly</p>
+      <div class="flex-row my-1 bg-light justify-content-space-evenly" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .flex-col-2
+        </div>
+      </div>
+      <p>.align-items-start</p>
+      <div class="flex-row my-1 bg-light justify-content-center align-items-start" style="border: 1px solid black; border-collapse: collapse;  height:200px;">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse; height:50px;"
+        >
+          .align-items-start
+        </div>
+      </div>
+      <p>.align-items-center</p>
+      <div class="flex-row my-1 bg-light justify-content-center align-items-center" style="border: 1px solid black; border-collapse: collapse; height:200px;">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse; height:50px;"
+        >
+          .align-items-center
+        </div>
+      </div>
+      <p>.align-items-end</p>
+      <div class="flex-row my-1 bg-light justify-content-center align-items-end" style="border: 1px solid black; border-collapse: collapse; height:200px;">
+        <div
+          class="flex-col-2 p-3 bg-info"
+          style="border: 1px solid black; border-collapse: collapse; height:50px;"
+        >
+          .align-items-end
+        </div>
+      </div>
+
+
+      <h5 class="mt-5">Text Alignment:</h5>
+      <div class="flex-row my-1 bg-light" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-12 p-3 bg-info text-start"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .text-start
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-12 p-3 bg-info text-end"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .text-end
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-12 p-3 bg-info text-center"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .text-center
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light" style="border: 1px solid black; border-collapse: collapse">
+        <div
+          class="flex-col-12 p-3 bg-info text-justify"
+          style="border: 1px solid black; border-collapse: collapse"
+        >
+          .text-justify
+        </div>
+      </div>
+      <div class="flex-row my-1 bg-light" style="border: 1px solid black; border-collapse: collapse;">
+        <div
+          class="flex-col-12 p-3 bg-info text-center"
+          style="border: 1px solid black; border-collapse: collapse;"
+        >
+        <span class="align-text-top">.align-text-top</span>
+        <span class="align-text-middle" style="line-height: 50px;">.align-text-middle</span>
+        <span class="align-text-bottom">.align-text-bottom</span>
+        </div>
+      </div>     
+
     </div>
+
+    <script>      
+      let colorScheme = localStorage.getItem('colorScheme');
+      const colorSchemeToggleBtn = document.querySelector('#color_scheme_toggle');
+
+      const disableDarkMode = () => {
+        document.body.classList.remove('darkMode');
+        colorSchemeToggleBtn.classList.remove('btn-dark');
+        localStorage.setItem('colorScheme', null);
+      };
+
+      const enableDarkMode = () => {
+        document.body.classList.add('darkMode');
+        colorSchemeToggleBtn.classList.add('btn-dark');
+        localStorage.setItem('colorScheme', 'darkMode');
+      };
+
+      if(colorScheme == 'darkMode') {
+        enableDarkMode();
+      }
+
+      colorSchemeToggleBtn.addEventListener('click', () =>{
+        colorScheme = localStorage.getItem('colorScheme');
+        if(colorScheme !== 'darkMode') {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
+      })
+    </script>
   </body>
 </html>
