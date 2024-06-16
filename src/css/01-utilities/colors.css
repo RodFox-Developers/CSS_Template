@@ -1,6 +1,7 @@
 .bg-light {
   background-color: var(--clr-light);
   color: var(--clr-dark);
+}
 
 .text-light {
   color: var(--clr-light);
