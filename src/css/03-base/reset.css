@@ -1,7 +1,3 @@
-html {
-  hanging-punctuation: first last;
-}
-
 *,
 *::before,
 *::after {
@@ -11,12 +7,60 @@ html {
   font: inherit;
 }
 
+html {
+  hanging-punctuation: first last;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
 p {
   text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
 a,
@@ -31,6 +75,22 @@ svg,
 video {
   display: block;
   max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
 }
 
 @media (prefers-reduced-motion: no-preference) {
